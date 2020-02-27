@@ -1,0 +1,144 @@
+body,
+html {
+    height: 100%;
+    scroll-behavior: smooth;
+    font-size: 19px;
+}
+
+
+/* Backgrounds */
+
+body::after {
+    content: '';
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-image: url(assets/images/background-body.jpg);
+    background-size: cover;
+    background-position: center;
+    transform: translateZ(0);
+    z-index: -1;
+    box-sizing: border-box;
+}
+
+.background-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    background-size: cover;
+}
+
+.background-overlay-2 {
+    background-color: rgba(46, 46, 46, 0.1);
+    background-size: cover;
+    min-height: 100%;
+}
+
+.background-home {
+    background-image: url(assets/images/background-home.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-attachment: fixed;
+    min-height: 100%;
+}
+
+.background-download {
+    background-image: url(assets/images/background-download.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100%;
+}
+
+
+/* Text Home */
+
+.text-home-lg {
+    font-size: 100px;
+}
+
+.text-home-md {
+    font-size: 70px;
+}
+
+
+/* Imagenes */
+
+@media screen and (min-width: 600px) {
+    .size-image {
+        height: 525px;
+    }
+}
+
+@media screen and (max-width: 601px) {
+    .size-image {
+        height: 250px;
+    }
+}
+
+
+/* Animation duration */
+
+body[data-aos-duration='6000'] [data-aos],
+[data-aos][data-aos][data-aos-duration='6000'] {
+    transition-duration: 6000ms;
+}
+
+body[data-aos-duration='8000'] [data-aos],
+[data-aos][data-aos][data-aos-duration='8000'] {
+    transition-duration: 8000ms;
+}
+
+
+/* Hovers */
+
+.hover-text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: black;
+}
+
+.card:hover .overlay {
+    opacity: 0.5;
+}
+
+.redes {
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+}
+
+.redes:hover {
+    color: white;
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+@media screen and (min-width: 800px) {
+    .nav-item {
+        -webkit-transition: 0.5s ease;
+        transition: 0.5s ease;
+    }
+    .nav-item:hover {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+}
