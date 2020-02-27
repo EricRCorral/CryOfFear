@@ -15,7 +15,7 @@ body::after {
     right: 0;
     top: 0;
     bottom: 0;
-    background-image: url(../assets/images/background-body.jpg);
+    background-image: url(assets/images/background-body.jpg);
     background-size: cover;
     background-position: center;
     transform: translateZ(0);
@@ -35,7 +35,7 @@ body::after {
 }
 
 .background-home {
-    background-image: url(../assets/images/background-home.jpg);
+    background-image: url(assets/images/background-home.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: right;
@@ -44,7 +44,7 @@ body::after {
 }
 
 .background-download {
-    background-image: url(../assets/images/background-download.jpg);
+    background-image: url(assets/images/background-download.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
